@@ -1,10 +1,10 @@
 {
   "name": "webpack-react",
   "version": "1.0.0",
-  "description": "Launch from http://localhost:8080/webpack-dev-server/build/",
+  "description": "Launch from http://localhost:8080/webpack-dev-server/build/. Run npm start or webpack -p for production",
   "main": "index.js",
   "scripts": {
-    "start" : "webpack-dev-server",
+    "start": "webpack-dev-server",
     "test": "tbc"
   },
   "repository": {
@@ -22,6 +22,7 @@
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
+    "html-webpack-plugin": "^1.7.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
     "webpack": "^1.12.11"

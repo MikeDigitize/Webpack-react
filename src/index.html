@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Webpack</title>
+    <title>{%= o.htmlWebpackPlugin.options.title %}</title>
 </head>
 <body>
-
+    {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+    <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+    {% } %}
 </body>
 </html>

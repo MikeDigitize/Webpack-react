@@ -1,2 +1,2 @@
-import { Awesome } from "./dep.js";
+import { Awesome } from "./dep";
 console.log(Awesome());
