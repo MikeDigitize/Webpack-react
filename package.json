@@ -4,7 +4,7 @@
   "description": "Launch from http://localhost:8080/webpack-dev-server/build/. Run npm start or webpack -p for production",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --inline --hot",
     "test": "tbc"
   },
   "repository": {
@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/MikeDigitize/Webpack-react#readme",
   "devDependencies": {
-    "//": "be sure to install webpack-dev-server globally",
+    "//": "Be sure to install webpack-dev-server globally. Be aware it doesn't create new files.",
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
     "html-webpack-plugin": "^1.7.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",

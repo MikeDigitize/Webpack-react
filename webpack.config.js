@@ -14,7 +14,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+            { test: /\.js$|\.jsx$/, exclude: /node_modules/, loader: "babel-loader" }
         ]
     },
     plugins : [
@@ -22,5 +22,6 @@ module.exports = {
             template: "./src/index.html",
             title : "Webpack is awesome"
         })
-    ]
+    ],
+    watch : true
 };
