@@ -4,7 +4,7 @@
   "description": "Launch from http://localhost:8080/webpack-dev-server/build/. Run npm start or webpack -p for production",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot",
+    "start": "webpack-dev-server",
     "test": "tbc"
   },
   "repository": {

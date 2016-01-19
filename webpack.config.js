@@ -1,16 +1,18 @@
 var path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
+    context : path.resolve("src"),
     entry : {
-        app: "./src/js/app.js"
+        app: "js/app.js"
     },
     resolve: {
         root: path.resolve(__dirname + "/src"),
         extensions: ["", ".js", ".jsx", ".json", ".scss"]
     },
     output : {
-        path: __dirname + "/build",
-        filename: "js/[name].js"
+        path: path.resolve(__dirname + "/build/js/"),
+        publicPath : "/build/js/",
+        filename: "[name].js"
     },
     module: {
         loaders: [
