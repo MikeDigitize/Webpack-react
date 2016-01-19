@@ -1,7 +1,7 @@
 {
   "name": "webpack-react",
   "version": "1.0.0",
-  "description": "Launch from http://localhost:8080/webpack-dev-server/build/. Run npm start or webpack -p for production",
+  "description": "Launch from http://localhost:8080/webpack-dev-server/build/. Run npm start, or webpack-dev-server -d for sourcemaps or webpack-dev-server -p for production",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",

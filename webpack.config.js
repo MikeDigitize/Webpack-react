@@ -10,9 +10,9 @@ module.exports = {
         extensions: ["", ".js", ".jsx", ".json", ".scss"]
     },
     output : {
-        path: path.resolve(__dirname + "/build/js/"),
-        publicPath : "/build/js/",
-        filename: "[name].js"
+        path: path.resolve(__dirname + "/build/"),
+        publicPath : "/build/",
+        filename: "js/[name].js"
     },
     module: {
         loaders: [
